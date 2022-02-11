@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 const Product = ({ id, img, title, description, price, addToCart }) => {
   return (
-    <Grid item xs={3}>
+    <Grid item xs={12} sm={6} lg={3} >
       <Card sx={{ maxWidth: 400 }}>
         <Link
           to={`products/${id}`}
