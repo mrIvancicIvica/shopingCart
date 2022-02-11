@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 import { getProduct, removeProduct, addToCart } from "../Redux/actions/productActions";
 import Product from "./Product";
+import {Container} from '@mui/material'
 
 const DetailsPage = () => {
   const dispatch = useDispatch();
@@ -30,14 +31,14 @@ const DetailsPage = () => {
   }, []);
 
   return (
-    <div>
+    <Container>
       <Product
         img={productDetail.image}
         price={productDetail.price}
         addToCart={() => dispatch(addToCart(productDetail))}
         description={productDetail.description}
       />
-    </div>
+    </Container>
   );
 };
 

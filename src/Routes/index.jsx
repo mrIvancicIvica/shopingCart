@@ -21,8 +21,10 @@ const index = () => {
       <Route element={<RedirectToHome />}>
         <Route path="login" element={<Login />} />
       </Route>
-
-      <Route path="signup" element={<Signup />} />
+      
+      <Route element={<RedirectToHome />}>
+        <Route path="signup" element={<Signup />} />
+      </Route>
     </Routes>
   );
 };
