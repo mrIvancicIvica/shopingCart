@@ -72,7 +72,7 @@ const Cart = () => {
                 >
                   +
                 </Button>
-                <Stack sx={{ marginLeft: 33 }}>
+                <Stack sx={{ marginLeft: 35 }}>
                   <IconButton
                     onClick={() => dispatch(deleteItem(item.id))}
                     aria-label="delete"

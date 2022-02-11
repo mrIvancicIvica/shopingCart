@@ -41,7 +41,7 @@ const Product = ({ id, img, title, description, price, addToCart }) => {
         <CardActions>
           <Button
             onClick={addToCart}
-            sx={{ marginRight: 10 }}
+            sx={{ marginRight: '30%' }}
             size="small"
             color="primary"
           >
